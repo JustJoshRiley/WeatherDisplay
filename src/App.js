@@ -1,10 +1,18 @@
 import './App.css';
-import Weather from './Weather';
+import DisplayWeather from './DisplayWeather';
+// import Weather from './Weather';
+import LoadWeather from './LoadWeather';
 
 function App() {
   return (
     <div className="App">
-      <Weather />
+      {/* <Weather /> */}
+      <div id="WeatherForm">
+        <LoadWeather />
+      </div>
+      <div id="DisplayResponse">
+        <DisplayWeather />
+      </div>
     </div>
   );
 }
